@@ -1,0 +1,26 @@
+{
+  "name": "tehco",
+  "version": "1.0.0",
+  "description": "my test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milad4444/tehco.git"
+  },
+  "keywords": [
+    "tehco"
+  ],
+  "author": "miladsarli4444@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milad4444/tehco/issues"
+  },
+  "homepage": "https://github.com/milad4444/tehco#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
