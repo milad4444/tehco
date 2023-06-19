@@ -7,13 +7,590 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tehco.ir</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <h1 class="text-5xl bg-slate-600 text-white py-10">Welcome to My Website</h1>
+    <header>
+        <div class="relative md:absolute flex w-full justify-center md:top-5 z-50">
+            <div
+                class="card w-full md:max-w-screen-2xl sm:w-full  bg-base-100 shadow-xl rounded-none md:rounded-xl  relative">
+                <div class="card-body">
+                    <div class="w-full flex justify-between items-center">
+                        <div class="flex gap-4 items-center">
+                            <label for="my-drawer-4" class="drawer-button btn btn-square  md:hidden">
+                                <span class="mdi mdi-menu"></span>
+                            </label>
+                            <button class="btn bg-amber-400 text-white hidden md:flex">
+                                پرتابل مشتریان
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+                            </button>
+                            <div class="flex-col justify-end text-right hidden lg:block">
+                                <p><span class="font-bold">تلفن</span> : 0219137651</p>
+                                <p dir="rtl"><span class="font-bold">ایمیل</span> : info@tehco.ir</p>
+                            </div>
+                            <div class="hidden lg:block">
+                                <span class=" material-icons" style="font-size: 40px;">
+                                    support_agent
+                                </span>
+                            </div>
+                        </div>
+                        <img src="http://www.tehco.ir/wp-content/uploads/2021/11/logo-logistic.png"
+                            style="max-width: 200px;" />
+                    </div>
+                </div>
+                <div class=" bottom-0 hidden
+                 justify-center w-full md:flex" style="width: 93%;margin: 0 auto;margin-bottom: -30px;">
+                    <div class="navbar bg-blue-700 rounded-xl">
+                        <div class="flex-1 text-white">
+                            <input type="text" placeholder="جستجو" class="input input-success max-w-md text-gray-800" />
+                            <div class="hidden lg:flex  
+                            divider divider-horizontal
+                             before:bg-white after:bg-white"></div>
+                            <div class=" gap-2 hidden lg:flex items-center">
+                                <span
+                                    class="mdi mdi-instagram duration-300 px-2 hover:bg-slate-900/10   text-2xl cursor-pointer social-media"></span>
+                                <span
+                                    class="mdi mdi-linkedin duration-300 px-2 hover:bg-slate-900/10   text-2xl cursor-pointer social-media"></span>
+                                <img src="../src/assets/icons8-aparat-96.png"
+                                    class="duration-300 px-2 hover:bg-slate-900/10 py-1 cursor-pointer social-media"
+                                    style="width: 40px;">
+                            </div>
+                        </div>
+                        <div dir="rtl">
+                            <ul class="flex flex-wrap text-white text-xl px-2 items-center duration-300">
+                                <li class="rounded-lg hover:bg-slate-950/10  px-5 py-2 cursor-pointer group">
+                                    <a
+                                        class="cursor-pointer opacity-60 group-hover:opacity-100 hover:font-bold">خانه</a>
+                                </li>
+                                <li class="rounded-lg hover:bg-slate-950/10  px-5 py-2 cursor-pointer group">
+                                    <a
+                                        class="cursor-pointer opacity-60 group-hover:opacity-100 hover:font-bold">خانه</a>
+                                </li>
+                                <li class="rounded-lg hover:bg-slate-950/10  px-5 py-2 cursor-pointer group">
+                                    <a
+                                        class="cursor-pointer opacity-60 group-hover:opacity-100 hover:font-bold">خانه</a>
+                                </li>
+                                <li class="group">
+                                    <div class="dropdown dropdown-hover bg-transparent">
+                                        <label tabindex="0"
+                                            class="btn m-1 focus:bg-slate-950/10 bg-transparent text-white opacity-60 group-hover:opacity-100 border-0 hover:bg-slate-950/10 hover:text-white">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+
+                                            محصولات</label>
+                                        <ul tabindex="0"
+                                            class="dropdown-content text-right  p-2 shadow bg-base-100 text-gray-800 rounded-box w-52">
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="group">
+                                    <div class="dropdown dropdown-hover bg-transparent">
+                                        <label tabindex="0"
+                                            class="btn m-1 focus:bg-slate-950/10 bg-transparent text-white opacity-60 group-hover:opacity-100 border-0 hover:bg-slate-950/10 hover:text-white">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+
+                                            محصولات</label>
+                                        <ul tabindex="0"
+                                            class="dropdown-content text-right  p-2 shadow bg-base-100 text-gray-800 rounded-box w-52">
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="group">
+                                    <div class="dropdown dropdown-hover bg-transparent">
+                                        <label tabindex="0"
+                                            class="btn m-1 focus:bg-slate-950/10 bg-transparent text-white opacity-60 group-hover:opacity-100 border-0 hover:bg-slate-950/10 hover:text-white">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+
+                                            محصولات</label>
+                                        <ul tabindex="0"
+                                            class="dropdown-content text-right  p-2 shadow bg-base-100 text-gray-800 rounded-box w-52">
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="group">
+                                    <div class="dropdown dropdown-hover bg-transparent">
+                                        <label tabindex="0"
+                                            class="btn m-1 focus:bg-slate-950/10 bg-transparent text-white opacity-60 group-hover:opacity-100 border-0 hover:bg-slate-950/10 hover:text-white">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+
+                                            محصولات</label>
+                                        <ul tabindex="0"
+                                            class="dropdown-content text-right  p-2 shadow bg-base-100 text-gray-800 rounded-box w-52">
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                            <li
+                                                class="text-sm hover:text-lg duration-300 hover:text-blue-700 hover:font-bold p-1 rounded-lg cursor-pointer mb-1">
+                                                <a>اتوماسیون
+                                                    اداری</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="rounded-lg hover:bg-slate-950/10  px-5 py-2 cursor-pointer group">
+                                    <a
+                                        class="cursor-pointer opacity-60 group-hover:opacity-100 hover:font-bold">خانه</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel w-full bg-gray-100" style="max-height: 900px;">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="../src/assets/medium-shot-man-wearing-vr-glasses.jpg" class="object-cover w-full" />
+                <div class="w-full h-full absolute flex  items-center justify-center">
+                    <h1 class="text-2xl md:text-5xl z-10  text-white bg-blue-700 px-7 py-7 font-bold rounded-md">ارائه و
+                        اجرای برنامه
+                        نویسی</h1>
+                </div>
+                <div class="w-full h-full absolute flex  items-center justify-center">
+                    <h1 class="text-xs sm:text-md md:text-xl mt-40 text-center text-blue-700 p-4 bg-white  rounded-md">
+                        خدمات تولید نرم افزار، وب افزار
+                        <br>
+                        ارائه خدمات تولید و پشتیبانی نرم افزاری و طراحی سایت
+                    </h1>
+                </div>
+                <div class="absolute flex justify-start transform -translate-y-1/2 left-0 md:left-1/4 right-5 bottom-0">
+                    <a href="#slide2"
+                        class="px-5 rounded-lg hover:bg-blue-700  p-4 text-center m-1 bg-gray-900 text-white">❮</a>
+                    <a href="#slide2"
+                        class="px-5 rounded-lg hover:bg-blue-700  p-4 text-center m-1 bg-gray-900 text-white">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full flex justify-end  items-center">
+                <div class="w-full justify-center flex">
+                    <h1 class="text-5xl">
+                        hi milad
+                    </h1>
+                </div>
+                <div class="text-center  w-full justify-center flex">
+                    <img src="../src/assets/13450330_OrgCoral_Ofc-01_Concept-06.jpg" class="object-contain"
+                        style="mix-blend-mode: darken;width: 1000px;" />
+                </div>
+                <div class="absolute flex justify-start transform -translate-y-1/2 left-0 md:left-1/4 right-5 bottom-0">
+                    <a href="#slide1"
+                        class="px-5 rounded-lg hover:bg-blue-700  p-4 text-center m-1 bg-gray-900 text-white">❮</a>
+                    <a href="#slide1"
+                        class="px-5 rounded-lg hover:bg-blue-700  p-4 text-center m-1 bg-gray-900 text-white">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-side z-50">
+            <label for="my-drawer-4" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                <!-- Sidebar content here -->
+                <li><a>Sidebar Item 1</a></li>
+                <li><a>Sidebar Item 2</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="relative">
+        <section class="relative flex w-full justify-center" style="font-family: 'lalehzar';height: 250px;">
+            <div id="web" class="w-full h-full flex justify-center items-center">
+                <h1 class="text-5xl text-center mx-5" style="z-index: 999;">
+                    شرکت <span class="text-blue-400">تهکو</span> ارائه خدمات فناوری اطلاعات
+                </h1>
+            </div>
+        </section>
+
+        <section class="flex flex-wrap gap-1 items-center justify-center mt-10 mb-24">
+            <a class="tab active-tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/support.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/network.png">
+                <p class="text-lg" style="margin-top: -15px;"> شبکه و زیرساخت </p>
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/host.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/organization.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/app.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/website.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+            </a>
+            <a class="tab">
+                <img class="object-contain" src="https://www.tehco.ir/wp-content/uploads/2021/10/seo.png">
+                <p class="text-lg" style="margin-top: -15px;">پشتیبانی و نرم افزار</p>
+            </a>
+        </section>
+        <section class="tab-content w-full max-w-screen-xl flex-col justify-center mx-auto">
+            <div class="tab-pane active-pane  grid grid-cols-1 justify-center lg:grid-cols-2">
+                <div style="max-width: 600px;margin: 0 auto;">
+                    <img class="object-contain hover:scale-105 duration-200"
+                        src="https://www.tehco.ir/wp-content/uploads/2021/10/pair-programming-concept-illustration_114360-1652.jpg">
+                </div>
+                <div dir="rtl" class="p-5">
+                    <h1>
+                        پشتیبانی و
+                        <span class="text-blue-700">
+                            وب افزار
+                        </span>
+                    </h1>
+                    </h1>
+                    <p class="text-xl text-justify">
+                        با لطف خداوند و همت تیم خلاق و جوان تهکو توانسته ایم تا به امروز پشتیبان تمام نیاز های مشتریان و
+                        خدمات ارائه شده به
+                        مخاطبین شرکت باشیم. با توجه به عملکرد و دستاوردهای پیشین از میزان رضایت مندی مشتریان عزیز این
+                        نوید را خواهیم داد که شرکت
+                        تهکو همچنان برروی خدمات خود پایداری داشته باشد و به مشتریان خود خدمات ارائه دهد. از این رو تهکو
+                        در طی مدت کوتاهی توانست
+                        جلب رضایت بسیاری از مشتریان را معطوف خود نماید و تواسته ایم نیازهای مشتریان را در کوتاه ترین
+                        زمان فراهم آوریم. تهکو برای
+                        خدمات خود برای مشتریان عزیز بصورت 7*24 خدمات رسانی خواهد کرد
+                    </p>
+                    <button class="btn bg-blue-700 px-8 text-white my-5 hover:text-black">
+                        اطلاعات بیشتر
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd"
+                                d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div class="tab-pane  grid grid-cols-1 justify-center lg:grid-cols-2">
+                <div style="max-width: 600px;margin: 0 auto;">
+                    <img class="object-contain hover:scale-105 duration-200"
+                        src="https://www.tehco.ir/wp-content/uploads/2021/10/team-specialists-with-magnifier-laptop-arrow-digital-marketing-ppc-campaign-customer-relationships-concept_335657-169.jpg">
+                </div>
+                <div dir="rtl" class="p-5">
+                    <h1>
+                        شبکه و
+                        <span class="text-blue-700">
+                            زیرساخت
+                        </span>
+                    </h1>
+                    </h1>
+                    <p class="text-xl text-justify">
+                        شرکت تهکو با داشتن کادر مجرب و متخصص در امور شبکه و زیر ساخت با تحلیل و ارائه راهکارهای مناسب و
+                        مقرون به صرفه خواهد
+                        توانست با توجه به نیازها و اندازه سازمان یا کسب و کار شما، چناچه نیاز به ارتباطات داخلی سیستمی و
+                        یکپارچه درون سازمانی
+                        باشد به همراه مشاوره رایگان و همچنین تحلیل های نیاز های اولیه شما را در ایجاد بستر زیر ساخت و
+                        ارتباطات سیستمی از جمله
+                        راهکارهای شبکه ای و ارائه سرور داخلی و ایجاد شبکه های توزیعی و هم پوشانی شده و ارتباطی، شما را
+                        یاری نماید.
+
+                    </p>
+                    <button class="btn bg-blue-700 px-8 text-white my-5 hover:text-black">
+                        اطلاعات بیشتر
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd"
+                                d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full max-w-screen-2xl mx-auto my-10" dir="rtl">
+            <div class="bg-blue-700  text-white w-full md:w-5/6 rounded-lg relative flex items-center justify-start"
+                style="height: 300px;">
+                <div class="flex-col">
+                    <h1 class="font-bold mr-20 text-4xl leading-snug">تهکو برای همکاری، اعلام آمادگی می نماید.</h1>
+                    <p class=" mr-20 text-xl py-5">
+                        جهت ارتباط و استعلام می توانید اقدام نمایید.
+                    </p>
+                    <button class="mr-20 block lg:hidden btn btn-active bg-white text-gray-800 px-6 text-lg"
+                        style="width: 150px;">ارتباط با
+                        ما</button>
+                </div>
+                <button
+                    class="lg:opacity-100 opacity-0 absolute btn btn-active bg-white text-gray-800 left-0 px-6 text-lg shadow-lg shadow-amber-600/20"
+                    style="left: -70px;width: 150px;">ارتباط با
+                    ما</button>
+            </div>
+        </section>
+
+
+        <section class="splide relative max-w-screen-2xl mx-auto" style="height: 250px;"
+            aria-label="Splide Basic HTML Example">
+            <div class="splide__track h-full">
+                <ul class="splide__list text-center items-center">
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                    <li class="splide__slide relative">
+                        <img src="https://www.tehco.ir/wp-content/uploads/2021/10/faraqi.png"
+                            class="object-contain mx-auto slider-image">
+                        <div class="middle">
+                            <div class="text">شهرداری تهران</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
+    <script>
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 7,
+            autoScroll: {
+                speed: 1,
+            },
+            breakpoints: {
+                1270: {
+                    perPage: 7,
+                },
+                1000: {
+                    perPage: 5,
+                },
+                800: {
+                    perPage: 3,
+                },
+                640: {
+                    perPage: 2,
+                },
+                480: {
+                    perPage: 1,
+                },
+            }
+        }).mount(window.splide.Extensions);
+        splide.mount();
+    </script>
 </body>
 
 </html>

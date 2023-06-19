@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: url('fonts/') format('truetype');
+  font-wight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans';
+  src: url('fonts/IRANSansWeb(FaNum).ttf') format('truetype');
+  font-wight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lalehzar';
+  src: url('fonts/Lalezar-Regular.ttf') format('truetype');
+  font-wight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'IRANSans' !important;
+}
+
+.social-media:hover {
+  transform: rotateY(360deg) !important;
+  -webkit-transform: rotateY(360deg) !important;
+  -moz-transform: rotateY(360deg) !important;
+  -ms-transform: rotateY(360deg) !important;
+  -o-transform: rotateY(360deg) !important;
+}
+#web::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.tehco.ir/wp-content/uploads/2021/10/cropped-Logo-1-512-1-180x180.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+.tab {
+  max-width: 170px;
+  height: 190px;
+}
+.active-tab {
+  border-bottom: 2px solid rgb(0, 119, 255);
+  height: 190px;
+  color: rgb(0, 119, 255) !important;
+}
+
+.tab-pane {
+  display: none;
+}
+.active-pane {
+  display: grid;
+}
+.active-pane h1 {
+  margin: 10px auto;
+  font-size: 35px;
+  font-family: 'lalehzar';
+}
+.slider-image {
+  max-width: 120px;
+  opacity: 0.6;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.splide__list .is-active .slider-image {
+  opacity: 1 !important;
+  scale: 1.3 !important;
+}
+.splide__slide {
+  cursor: pointer;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.493);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.splide__slide:hover .image {
+  opacity: 0.3;
+}
+
+.splide__slide:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 16px 32px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
